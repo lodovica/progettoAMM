@@ -9,7 +9,7 @@
         background-color: #990000;
         padding-top: 0px;
         padding-bottom: 20px;
-        height: 220px;
+        height: 230px;
         width: 900px;
         box-shadow: 0 0 10px rgba(0,0,0,.2);
 
@@ -23,8 +23,8 @@
     }
     
     #page {
-        background-image: url('../images/pageBG.png');
-        background-repeat: repeat-x;
+        background-image: url('../images/pageBG.jpg');
+        background-repeat: no-repeat;
         background-color: #f1f1d3;
         width: 900px;
         margin-left: auto;
