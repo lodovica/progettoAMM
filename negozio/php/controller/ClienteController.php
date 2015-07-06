@@ -122,7 +122,7 @@ class ClienteController extends BaseController {
                         
                         //se il numero di prodotti ordinate e' accettabile (>0) per ogni tipologia di prodotto creo un nuovo record su RigheOrdini
                         //indicando dimensione e quantita' . aggiorno l'ordine creato in precedenza con tutto il riepilogo dei dati
-                        if($nrProdotti){ 
+                        if($nrProdotti != 0){ 
                             OrdineFactory::instance()->nuovoOrdine($ordine);                           
 
                             foreach($idProdotti as $idProdotto){
@@ -215,12 +215,14 @@ class ClienteController extends BaseController {
     //e conta quanti prodotti sono stati richiesti in totale
     private function validaForm($idProdotti , $request) {
          $valide = 0;
-         foreach($idProdotti as $idProdotto){
-            $quantitaM = filter_var($request[$idProdotto.'medio'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
-            if (isset($quantitaM) && ($quantitaM != 0)) $valide+=$quantitaM;
-            $quantitaG = filter_var($request[$idProdotto.'grande'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
-            if (isset($quantitaG) && ($quantitaG != 0)) $valide+=$quantitaG;   
-         }        
+         if (is_array($idProdotti) || (is_object($idProdotti))) {
+			 foreach($idProdotti as $idProdotto){
+				$quantitaM = filter_var($request[$idProdotto.'medio'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
+				if (isset($quantitaM) && ($quantitaM != 0)) $valide+=$quantitaM;
+				$quantitaG = filter_var($request[$idProdotto.'grande'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);
+				if (isset($quantitaG) && ($quantitaG != 0)) $valide+=$quantitaG;   
+			 }  
+         }
          return $valide;
     }
 
