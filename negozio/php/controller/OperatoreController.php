@@ -2,7 +2,6 @@
 
 include_once 'BaseController.php';
 include_once basename(__DIR__) . '/../model/RigaOrdineFactory.php';
-include_once basename(__DIR__) . '/../model/OrarioFactory.php';
 include_once basename(__DIR__) . '/../model/ProdottoFactory.php';
 include_once basename(__DIR__) . '/../model/OrdineFactory.php';
 
