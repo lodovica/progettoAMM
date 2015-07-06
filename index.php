@@ -24,7 +24,7 @@
        </p>
        <ul>
             <li>Il cliente che l'ha richiesto</li>
-            <li>L'addetto agli ordini al quale è stata assegnata la gestione</li>
+            <li>L'operatore agli ordini al quale è stata assegnata la gestione</li>
         </p>      
         <p>
             Nel sistema sono presenti due tipi di utenti, che interagiscono in modo differente con l'interfaccia:
@@ -80,7 +80,7 @@
             <li>Utilizzo del pattern MVC </li>
             <li>Due ruoli (cliente e operatore)</li>
             <li>Transazione per il salvataggio/aggiornamento di un nuovo ordine. Visibile all'interno della classe OrdineFactory.php: metodi nuovoOrdine e aggiornaOrdine</li>
-            <li>Caricamento ajax dei risultati della ricerca degli ordini da parte dell'addetto agli ordini</li>
+            <li>Caricamento ajax dei risultati della ricerca degli ordini da parte dell'operatore agli ordini</li>
         </ul>
         
     <h2>Accesso al progetto</h2>

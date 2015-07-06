@@ -107,8 +107,8 @@ class BaseController {
      * @param ViewDescriptor $vd il descrittore della vista
      */
     protected function showHomeOperatore($vd) {
-        // mostro la home dgli addetti agli ordini
-        $vd->setTitolo("Gestione addetto ordini");
+        // mostro la home dgli operatori
+        $vd->setTitolo("Gestione operatore");
         $vd->setMenuFile(basename(__DIR__) . '/../view/operatore/menu.php');
         $vd->setLogoFile(basename(__DIR__) . '/../view/operatore/logo.php');
         $vd->setLeftBarFile(basename(__DIR__) . '/../view/operatore/leftBar.php');
