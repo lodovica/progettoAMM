@@ -85,7 +85,7 @@
         
     <h2>Accesso al progetto</h2>
     <p>
-        Il codice clonabile del progetto si trova all'indirizzo <a href="php/login">https://github.com/lodovica/negozio</a>
+        Il codice clonabile del progetto si trova all'indirizzo <a href="php/login">https://github.com/lodovica/progettoAMM.git</a>
     </p>
     <p>
         La homepage del progetto si trova all'indirizzo <a href="php/login">http://spano.sc.unica.it/amm2015/marchesiLodovica/php/login</a>
