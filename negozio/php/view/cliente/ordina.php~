@@ -1,11 +1,11 @@
-<h2>Lista Prodotti</h2>
+<h2>Lista Pizze</h2>
 
 <div class="input-form">
 
 <table>
     <tr>
         <th>Nome</th>
-        <th>Descrizioni</th>    
+        <th>Ingredienti</th>    
         <th>Normali</th>
         <th>Prezzo</th>         
         <th>Giganti</th>
