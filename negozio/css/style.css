@@ -47,13 +47,10 @@
     #menu ul li{
         display: inline-block;
         margin-right: 10px;
-
-  
-
     }
 
     #menu a:link, #menu a:visited{
-        color: white;
+        color: black;
     }
     
     #menuTop li.riga{
@@ -83,7 +80,7 @@
     background-color: #990000;
     padding: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     display: block; 
     margin: auto; 
     margin-top: 10px;
@@ -100,7 +97,7 @@
     #logout{
         margin-left: 600px;
         position: absolute; 
-        color: white;
+        color: black;
     }
     
     p.logout a:link, p.logout a:visited{
@@ -225,7 +222,7 @@
 
     th{
         background-color: #f5f614;
-        color: white;
+        color: black;
         font-weight: bold;
     }
     td.normal {
