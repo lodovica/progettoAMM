@@ -55,7 +55,7 @@ switch ($vd->getSottoPagina()) {
                 <img src="../images/ricerca.png" alt="elenco ordini"></a></td>
                 
                 <td class="noRighe"><a href="cliente/contatti" title="contatti">
-                <img src="../images/contatti.png" alt="contatti"></a></td>        
+                <img src="../images/contatti.jpeg" alt="contatti"></a></td>        
                 <td class="noRighe">
                     <h4>Contatti</h4>
                     <p><i>I nostri riferimenti</i></p>
