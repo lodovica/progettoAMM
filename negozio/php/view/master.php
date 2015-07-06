@@ -49,7 +49,7 @@ if (!$vd->isJson()) {
                 <div id="menu">
                     <?php
                         $menu = $vd->getMenuFile();
-                        require "$menu";
+                       // require "$menu";
                     ?>
                 </div> 
 
@@ -62,7 +62,7 @@ if (!$vd->isJson()) {
                         <li id="categories">
                             <?php
                             $left = $vd->getLeftBarFile();
-                            require "$left";
+                          // require "$left";
                             ?>
                         </li>
 
@@ -95,7 +95,7 @@ if (!$vd->isJson()) {
                     ?>
                     <?php
                     $content = $vd->getContentFile();
-                    require "$content";
+                 //   require "$content";
                     ?>
 
 
@@ -129,7 +129,7 @@ if (!$vd->isJson()) {
     header('Content-type: application/json');
     
     $content = $vd->getContentFile();
-    require "$content";
+   // require "$content";
 }
 ?>
 
