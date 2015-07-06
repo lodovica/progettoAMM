@@ -6,7 +6,7 @@
     header {
         background-image: url('../images/logo.jpg');
         background-repeat: repeat;
-        background-color: #990000;
+        background-color: #f1f1d3;
         padding-top: 0px;
         padding-bottom: 20px;
         height: 230px;
@@ -38,7 +38,7 @@
     #menu{
         margin-top: 155px;
         display: inline-block;
-        color: white;
+        color: black;
         list-style: none;
         position: static;
 
