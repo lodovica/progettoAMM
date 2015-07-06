@@ -115,7 +115,7 @@ class RigaOrdineFactory {
     * @param $RigaOrdine RigaOrdine di riferimento
     * @return il prezzo dell'insieme di prodotti
     */    
-    public function getPrezzoPerProdotti(RgaOrdine $RigaOrdine){
+    public function getPrezzoPerProdotti(RigaOrdine $RigaOrdine){
         $query = "SELECT
                 RigheOrdini.quantita quantita,
                 RigheOrdini.dimensione dimensione,
@@ -289,7 +289,7 @@ class RigaOrdineFactory {
     * @param $ordine ordine di riferimento
     * @return un determinato record in cui l'id dell'ordine e' quello dato come riferimento
     */     
-    public function getRigaOrdinePerIdOrdine(Ordine $ordine){
+    public function getRigaOrdinePerIdOrdine($ordine){
         $rigaOrdine = array();
         $query = "SELECT * FROM RigheOrdini
                   WHERE RigheOrdini.ordine_id = ?";          
@@ -309,7 +309,7 @@ class RigaOrdineFactory {
             return 0;
         }
 
-        if (!$stmt->bind_param('i', $ordine->getId())) {
+        if (!$stmt->bind_param('i', $ordine["id"])) {
             error_log("[getRigaOrdinePerIdOrdine] impossibile" .
                     " effettuare il binding in input");
             $mysqli->close();
@@ -352,7 +352,7 @@ class RigaOrdineFactory {
     }                
         
     public function creaRigaOrdineDaArray($row) {
-        $rigaOrdine = new Prodotto_ordine();
+        $rigaOrdine = new RigaOrdine();
         $rigaOrdine->setProdotto($row['prodottoId']);
         $rigaOrdine->setOrdine($row['ordineId']);        
         $rigaOrdine->setId($row['id']);

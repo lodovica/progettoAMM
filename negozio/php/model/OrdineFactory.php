@@ -29,8 +29,9 @@ class OrdineFactory {
     * @param $id id nuovo ordine
     * @return il numero di righe create
     */    
-    public function nuovoOrdine($ordine){
-        $query = "INSERT INTO Ordini (`id`) VALUES (?)";   
+    public function nuovoOrdine($ordine, $cliente, $operatore){
+        $query = "INSERT INTO Ordini (`id`,`spedizione`,`prezzo`,`stato`,`data`,`cliente_id`,`operatore_id`) VALUES (?)";   
+        
         
         $mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
@@ -49,7 +50,14 @@ class OrdineFactory {
         }
         
         if (!$stmt->bind_param('i',
-                $ordine->getId())) {
+                $ordine->getId(),
+                $ordine->getSpedizione(),
+                $ordine->getPrezzo(),
+                $ordine->getStato(),
+                $ordine->getData(),
+                $cliente,
+                $operatore
+                )) {
             error_log("[nuovoOrdine] impossibile" .
                     " effettuare il binding in input");
             $mysqli->close();
@@ -226,7 +234,7 @@ class OrdineFactory {
     */     
     public function getOrdine($id){
 
-        $query = "SELECT * FROM Ordini WHERE id = ?";
+        $query = "SELECT * FROM ordini WHERE id = ?";
         
         $mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
@@ -258,7 +266,7 @@ class OrdineFactory {
  
 // per un singolo risultato
     public function &caricaOrdineDaStmt(mysqli_stmt $stmt) {
-        $ordine = array();
+        $ordine = new Ordine();
         if (!$stmt->execute()) {
             error_log("[caricaOrdiniDaStmt] impossibile" .
                     " eseguire lo statement");
@@ -312,7 +320,7 @@ class OrdineFactory {
             return null;
         }
         while ($stmt->fetch()) {
-            $ordini[] = self::creaOrdineDaArray($row);
+            $ordini = self::creaOrdineDaArray($row);
         }
         $stmt->close();
         return $ordini;
@@ -322,7 +330,7 @@ class OrdineFactory {
     public function creaOrdineDaArray($row) {
         $ordine = new Ordine();
         $ordine->setId($row['ordine_id']);
-        $ordine->setDomicilio($row['ordine_spedizione']);        
+        $ordine->setSpedizione($row['ordine_spedizione']);        
         $ordine->setPrezzo($row['ordine_prezzo']);
         $ordine->setStato($row['ordine_stato']);
         $ordine->setData($row['ordine_data']);        

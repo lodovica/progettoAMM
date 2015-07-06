@@ -123,7 +123,7 @@ class ClienteController extends BaseController {
                         //se il numero di prodotti ordinate e' accettabile (>0) per ogni tipologia di prodotto creo un nuovo record su RigheOrdini
                         //indicando dimensione e quantita' . aggiorno l'ordine creato in precedenza con tutto il riepilogo dei dati
                         if($nrProdotti>0){ 
-                            OrdineFactory::instance()->nuovoOrdine($ordine);                           
+                            OrdineFactory::instance()->nuovoOrdine($ordine, $user->getId(), '1' );                           
 
                             foreach($idProdotti as $idProdotto){
                                 $quantita = filter_var($request[$idProdotto.'medio'], FILTER_VALIDATE_INT, FILTER_NULL_ON_FAILURE);

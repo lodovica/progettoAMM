@@ -1,7 +1,7 @@
 <h2>Riepilogo Ordine</h2>
 <form action="cliente/conferma_ordine" method="post">
     
- <?php    
+ <?    
     $ordine = OrdineFactory::instance()->getOrdine($ordineId);
     $RigaOrdines = RigaOrdineFactory::instance()->getRigaOrdinePerIdOrdine($ordine);
     
@@ -21,7 +21,7 @@
                 <th>Prezzo TOT</th>                 
             </tr>     
 
-    <?php foreach ($RigaOrdines as $RigaOrdine) {
+    <?foreach ($RigaOrdines as $RigaOrdine) {
             $prodotto = ProdottoFactory::instance()->getProdottoPerId($RigaOrdine->getProdotto());?>
             <tr>
                 <td><?= $prodotto->getNome()?></td>
@@ -31,7 +31,7 @@
                 <td><?= RigaOrdineFactory::instance()->getPrezzoPerProdotti($RigaOrdine) . "€ "?></td>                               
                    
             </tr>
-    <?php } ?>    
+    <? } ?>    
              <tr>
                 <th>Spedizione</th>
                 <th>Prezzo spedizione</th>                

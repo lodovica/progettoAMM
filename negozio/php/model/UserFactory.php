@@ -1,9 +1,9 @@
 <?php
 
+//include_once '../Db.php';
 include_once 'User.php';
 include_once 'Operatore.php';
 include_once 'Cliente.php';
-include_once 'Db.php';
 
 /**
  * Classe per la creazione degli utenti del sistema
@@ -35,9 +35,7 @@ class UserFactory {
      * @return \User|\Operatore|\Cliente
      */
     public function caricaUtente($username, $password) {    
-    	
-        $mysqli = Db::connectDb();
-        $mysqli = Db::getInstance()->connectDb();
+    	$mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
             error_log("[caricaUtente] impossibile inizializzare il database");
             $mysqli->close();

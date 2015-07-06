@@ -15,7 +15,7 @@
 <form action="cliente/ordina" method="post">
     
 
-    <?php foreach ($prodotti as $prodotto) {
+    <?foreach ($prodotti as $prodotto) {
         ?>
         <tr>
             <td class="col-small"><?= $prodotto->getNome() ?></td>
@@ -25,7 +25,7 @@
             <td class="col-small"><input type="number" name=<?= $prodotto->getId()."grande" ?> maxlength="2" size="2" min="0" max="10"></td>
             <td class="col-small"><?= $prodotto->getPrezzo()+($prodotto->getPrezzo()*30/100) . "€ "?></td>            
         </tr>
-    <?php } ?>
+    <? } ?>
 </table>
 
     <label for="spedizione">Spedizione a domicilio (altrimenti ritiro in negozio)</label>
