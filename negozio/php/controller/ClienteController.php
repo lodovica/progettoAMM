@@ -69,7 +69,6 @@ class ClienteController extends BaseController {
                     case 'ordina':                        
                         $_SESSION['pagina'] = 'ordina.php';
                         $prodotti = ProdottoFactory::instance()->getProdotti();
-                        $orari = OrarioFactory::instance()->getOrari();
                         $vd->setSottoPagina('ordina');
                         break;
 

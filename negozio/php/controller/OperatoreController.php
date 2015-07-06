@@ -62,7 +62,6 @@ class OperatoreController extends BaseController {
                     // ricerca di tutti gli ordini che sono stati eseguiti tramite il sito 
                     case 'ricerca_ordini':
                         $_SESSION['pagina'] = 'ricerca_ordini.php';
-                        $orari = OrarioFactory::instance()->getOrari();
                         $date = OrdineFactory::instance()->getDate();
                         $vd->setSottoPagina('ricerca_ordini');
                    
