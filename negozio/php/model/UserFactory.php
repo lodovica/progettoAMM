@@ -34,7 +34,9 @@ class UserFactory {
      * @param string $password
      * @return \User|\Operatore|\Cliente
      */
-    public function caricaUtente($username, $password) {
+    public function caricaUtente($username, $password) {    
+    	
+        $mysqli = Db::connectDb();
         $mysqli = Db::getInstance()->connectDb();
         if (!isset($mysqli)) {
             error_log("[caricaUtente] impossibile inizializzare il database");

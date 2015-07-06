@@ -26,7 +26,7 @@ class Settings {
             switch ($_SERVER['HTTP_HOST']) {
                 case 'localhost':
                     // configurazione locale
-                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/negozio/';
+                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/progettoAMM/negozio/';
                     break;
                 case 'spano.sc.unica.it':
                     // configurazione pubblica

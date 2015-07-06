@@ -40,7 +40,7 @@ switch ($vd->getSottoPagina()) {
                 <img src="../images/anagrafica.jpeg" alt="anagrafica"></a></td> 
                 
                 <td class="noRighe"><a href="cliente/ordina" title="ordina">
-                <img src="../images/gestione.png" alt="ordina"></a></td>
+                <img src="../images/gestione.jpeg" alt="ordina"></a></td>
                 <td class="noRighe">
                     <h4>Ordina</h4>
                     <p><i>Crea un nuovo ordine</i></p>
@@ -52,7 +52,7 @@ switch ($vd->getSottoPagina()) {
                     <p><i>Visualizza tutti gli ordini effettuati</i></p>                   
                 </td> 
                 <td class="noRighe"><a href="cliente/elenco_ordini" title="elenco_ordini">
-                <img src="../images/ricerca.png" alt="elenco ordini"></a></td>
+                <img src="../images/ricerca.jpeg" alt="elenco ordini"></a></td>
                 
                 <td class="noRighe"><a href="cliente/contatti" title="contatti">
                 <img src="../images/contatti.jpeg" alt="contatti"></a></td>        

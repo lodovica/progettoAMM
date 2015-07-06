@@ -24,7 +24,7 @@ if (!$vd->isJson()) {
             <meta http-equiv="content-type" content="text/html; charset=utf-8" />
             <title><?= $vd->getTitolo() ?></title>
             <base href="<?= Settings::getApplicationPath() ?>php/"/>
-            <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+            <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.jpeg" />
             <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
             <?php
              

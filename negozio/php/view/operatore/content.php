@@ -33,10 +33,10 @@ switch ($vd->getSottoPagina()) {
                     <p><i>Verifica e modifica i tuoi dati personali</i></p>
                 </td>     
                 <td class="noRighe"><a href="operatore/anagrafica" title="anagrafica">
-                    <img src="../images/anagrafica.png" alt="anagrafica"></a></td>                    
+                    <img src="../images/anagrafica.jpeg" alt="anagrafica"></a></td>                    
                                              
                 <td class="noRighe"><a href="operatore/gestione_ordini" title="gestione_ordini">
-                    <img src="../images/gestione.png" alt="gestione ordini"></a>
+                    <img src="../images/gestione.jpeg" alt="gestione ordini"></a>
                 </td>  
                 <td class="noRighe">
                     <h4>Gestione ordini</h4>
@@ -51,7 +51,7 @@ switch ($vd->getSottoPagina()) {
                     <p><i>ricerca gli ordini relativi a date passate</i></p>  
  
                <td class="noRighe"><a href="operatore/ricerca_ordini" title="ricerca_ordini">
-                   <img src="../images/ricerca.png" alt="ricerca ordini"></a>
+                   <img src="../images/ricerca.jpeg" alt="ricerca ordini"></a>
                </td>
             </tr>
         </table>
