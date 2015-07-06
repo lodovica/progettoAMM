@@ -30,7 +30,7 @@ class Settings {
                     break;
                 case 'spano.sc.unica.it':
                     // configurazione pubblica
-                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/amm2015/marchesiLodovica/';
+                    self::$appPath = 'http://' . $_SERVER['HTTP_HOST'] . '/amm2015/marchesiLodovica/negozio';
                     break;
 
                 default:
