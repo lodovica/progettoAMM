@@ -103,8 +103,8 @@
         </ul>
         <li>Ruolo Operatore:</li>
         <ul>
-            <li>username: mario</li>
-            <li>password: mario</li>
+            <li>username: rossi</li>
+            <li>password: rossi</li>
         </ul>
     </ul>
 </body>
