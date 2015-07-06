@@ -72,11 +72,11 @@ class Ordine {
     }
     
     public function getOperatore() {
-        return $this->addettoOrdini;
+        return $this->operatore;
     }
     
     public function setOperatore($operatore_id) {
-        $this->addettoOrdini = $operatore_id;
+        $this->operatore = $operatore_id;
         return true;
     }
 }

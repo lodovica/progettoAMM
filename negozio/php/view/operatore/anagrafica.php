@@ -13,7 +13,7 @@
 
         <li><strong>Via: </strong><?= $user->getVia() ?> <?= $user->getCivico() ?></li>
         <li><strong>CAP: </strong><?= $user->getCap() ?></li>       
-        <li><strong>Citta' : </strong><?= $user->getCitta() ?></li>       
+        <li><strong>Citta': </strong><?= $user->getCitta() ?></li>       
         <li><strong>Telefono: </strong><?= $user->getTelefono() ?></li>       
     </ul>
 </div>

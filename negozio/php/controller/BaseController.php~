@@ -103,7 +103,7 @@ class BaseController {
 
     /**
      * Imposta la vista master.php per visualizzare la pagina di gestione
-     * dell'operatore
+     * del addettoOrdini
      * @param ViewDescriptor $vd il descrittore della vista
      */
     protected function showHomeOperatore($vd) {
