@@ -24,7 +24,7 @@
     
     #page {
         background-image: url('../images/pageBG.png');
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-color: #f1f1d3;
         width: 900px;
         margin-left: auto;
@@ -105,7 +105,7 @@
     
     p.logout a:link, p.logout a:visited{
         padding-left: 18px;
-        color: orange;
+        color: yellow;
         
     }
     
@@ -224,7 +224,7 @@
     }
 
     th{
-        background-color: #990000;
+        background-color: #f5f614;
         color: white;
         font-weight: bold;
     }
@@ -263,8 +263,8 @@
 
     .error{
         width: 90%;
-        background-color: #f5a5a5;
-        border: 3px solid #9e1616;
+        background-color: #fddb50;
+        border: 3px solid #ecbf09;
         margin: auto;
         padding: 10px;
         text-align: center;
@@ -280,7 +280,7 @@
 
     .confirm{
         width: 90%;
-        background-color: #c7edce;
+        background-color: #0fea81;
         border: 3px solid #36956e;
         margin: auto;
         padding: 10px;
