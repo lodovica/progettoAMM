@@ -41,7 +41,7 @@ if (!$vd->isJson()) {
                     <div class="logout">
                         <?php
                         $logo = $vd->getLogoFile();
-                       // require "$logo";
+                        include "$logo";
                         ?>
                     </div>
 
