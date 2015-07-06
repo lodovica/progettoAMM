@@ -500,7 +500,7 @@ class OrdineFactory {
         }
 
         if (!$stmt->bind_param('si', $newData)) {
-            error_log("[ricercaPerData] impossibile" .
+            error_log("[ricercaPerDataOra] impossibile" .
                     " effettuare il binding in input");
             $mysqli->close();
             return 0;
