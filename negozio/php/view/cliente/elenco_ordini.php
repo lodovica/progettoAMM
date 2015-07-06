@@ -1,4 +1,4 @@
-<h2>Elenco Ordini</h2>
+<h2>Cronologia Ordini</h2>
 
 
 <?php if (count($ordini) > 0) { ?>
@@ -28,5 +28,5 @@
         </tbody>
     </table>
 <?php } else { ?>
-    <p> Non è presente alcun ordine </p>
+    <p> Non e' presente alcun ordine </p>
 <?php } ?>

@@ -16,7 +16,7 @@
             <tr>
                 <th>Prodotto</th>
                 <th>Dimensione</th>                
-                <th>Quantita</th>
+                <th>Quantita'</th>
                 <th>Prezzo</th>      
                 <th>Prezzo TOT</th>                 
             </tr>     
@@ -33,14 +33,12 @@
             </tr>
     <? } ?>    
              <tr>
-                <th>Fascia oraria</th> 
-                <th>Domicilio</th>
-                <th>Prezzo Domicilio</th>                
-                <th>Prezzo Pizze</th>
+                <th>Spedizione</th>
+                <th>Prezzo spedizione</th>                
+                <th>Prezzo Prodotti</th>
                 <th>Prezzo Totale</th>                     
             </tr>       
             <tr>
-                <td><?= OrdineFactory::instance()->getValoreOrario($ordine->getOrario()) ?></td>
                 <td><? if($spedizioneSi){?>si<? } else {?>no<? } ?></td>            
                 <td><? if($spedizioneSi){?>1.5<? } else {?>0<? } ?></td>
                 <td><?= RigaOrdineFactory::instance()->getPrezzoParziale($ordine) . "€ " ?></td>                 

@@ -1,4 +1,4 @@
-<h2>Dettaglio ordine n°<?=$ordine->getId()?></h2>
+<h2>Dettaglio ordine nr. <?=$ordine->getId()?></h2>
 
 <h4>Dati cliente</h4>
 <ul>
@@ -10,9 +10,9 @@
     <table>
 
             <tr>
-                <th >Prodotto</th>
+                <th>Prodotto</th>
                 <th>Dimensione</th>                
-                <th>Quantita</th>
+                <th>Quantita'</th>
                 <th>Prezzo</th>      
                 <th>Prezzo TOT</th>                 
             </tr>     
@@ -28,15 +28,13 @@
                    
             </tr>
     <? } ?>    
-             <tr>
-                <th>Fascia oraria</th>                  
-                <th>Domicilio</th>
-                <th>Prezzo Domicilio</th>                
-                <th>Prezzo Pizze</th>
+             <tr>                
+                <th>Spedizione</th>
+                <th>Prezzo spedizione</th>                
+                <th>Prezzo Prodotti</th>
                 <th>Prezzo Totale</th>                     
             </tr>       
-            <tr>
-                <td><?= OrdineFactory::instance()->getValoreOrario($ordine->getOrario()) ?></td>           
+            <tr>           
                 <td><? if($ordine->getSpedizione() == "si"){?>si<? } else {?>no<? } ?></td>            
                 <td><? if($ordine->getSpedizione() == "si"){?>1.5€<? } else {?>0€<? } ?></td>
                 <td><?= RigaOrdineFactory::instance()->getPrezzoParziale($ordine) . "€ "?></td>                 

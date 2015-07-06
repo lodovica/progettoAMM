@@ -30,7 +30,7 @@ switch ($vd->getSottoPagina()) {
             <tr>               
                 <td class="noRighe">
                     <h4>Anagrafica</h4>
-                    <p><i>Verifica e modifica i dati personali</i></p>
+                    <p><i>Verifica e modifica i tuoi dati personali</i></p>
                 </td>     
                 <td class="noRighe"><a href="operatore/anagrafica" title="anagrafica">
                     <img src="../images/anagrafica.png" alt="anagrafica"></a></td>                    

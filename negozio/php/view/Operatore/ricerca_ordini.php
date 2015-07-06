@@ -1,6 +1,5 @@
 <h2>Ricerca Ordini</h2>
 
-
 <h4>Seleziona i dettagli della ricerca</h4>
 <form method="get" action="operatore/ricerca_ordini">
     
@@ -17,13 +16,6 @@
         </select>
 
         <br/>
-        <label for="myOra">Fascia oraria</label>
-        <select name="myOra" id="myOra">
-            <option value=""></option>
-            <?php foreach ($orari as $orario) { ?>
-                <option value="<?= $orario->getId() ?>" ><?= $orario->getFasciaOraria() ?></option>
-            <?php } ?>
-        </select>
         <p>
         <button id="filtra" type="submit" name="cmd">Cerca</button>
         </p>

@@ -7,6 +7,7 @@ switch ($vd->getSottoPagina()) {
     case 'ordina':
         include_once 'ordina.php';      
         break;   
+        
     case 'elenco_ordini':
         include_once 'elenco_ordini.php';       
         break;
@@ -33,7 +34,7 @@ switch ($vd->getSottoPagina()) {
             <tr>     
                 <td class="noRighe">
                     <h4>Anagrafica</h4>
-                    <p><i>Verifica e modifica i dati personali</i></p>
+                    <p><i>Verifica/Modifica i tuoi dati personali</i></p>
                 </td>     
                 <td class="noRighe"><a href="cliente/anagrafica" title="anagrafica">
                 <img src="../images/anagrafica.png" alt="anagrafica"></a></td> 
@@ -47,7 +48,7 @@ switch ($vd->getSottoPagina()) {
             </tr>                 
             <tr>
                 <td class="noRighe">
-                    <h4>Elenco ordini</h4>
+                    <h4>Cronologia ordini</h4>
                     <p><i>Visualizza tutti gli ordini effettuati</i></p>                   
                 </td> 
                 <td class="noRighe"><a href="cliente/elenco_ordini" title="elenco_ordini">

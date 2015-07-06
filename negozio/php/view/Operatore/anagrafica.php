@@ -1,7 +1,7 @@
 <div>
     <h2>Dati personali</h2>
 <ul>
-    <li><strong>Codice dipendente:</strong> <?= $user->getId() ?></li>
+    <li><strong>Codice operatore:</strong> <?= $user->getId() ?></li>
     <li><strong>Nome:</strong> <?= $user->getNome() ?></li>
     <li><strong>Cognome:</strong> <?= $user->getCognome() ?></li>
 </ul>
@@ -13,7 +13,7 @@
 
         <li><strong>Via: </strong><?= $user->getVia() ?> <?= $user->getCivico() ?></li>
         <li><strong>CAP: </strong><?= $user->getCap() ?></li>       
-        <li><strong>Citt√†: </strong><?= $user->getCitta() ?></li>       
+        <li><strong>Citta'†: </strong><?= $user->getCitta() ?></li>       
         <li><strong>Telefono: </strong><?= $user->getTelefono() ?></li>       
     </ul>
 </div>

@@ -1,11 +1,11 @@
-<h2>Gestione ordini del <?= date('d-m-Y');?></h2>
+<h2>Gestione ordini in data: <?= date('d-m-Y');?></h2>
 <?php if (count($ordini) > 0) { ?>
     <table>
         <tr>
             <th>Ordine</th>
             <th>Nome</th>    
             <th>Cognome</th>
-            <th>Domicilio</th>         
+            <th>Spedizione</th>         
             <th>Indirizzo</th>
             <th>Prezzo</th>      
             <th>Paga</th>
@@ -32,5 +32,5 @@
     </table>
 
 <?php } else { ?>
-    <p> Non è presente alcun ordine per la data odierna</p>
+    <p> Non e' presente alcun ordine in data odierna</p>
 <?php } ?>
