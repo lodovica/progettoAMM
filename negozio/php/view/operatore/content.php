@@ -51,7 +51,7 @@ switch ($vd->getSottoPagina()) {
                     <p><i>ricerca gli ordini relativi a date passate</i></p>  
  
                <td class="noRighe"><a href="operatore/ricerca_ordini" title="ricerca_ordini">
-                   <img src="../images/ricerca.jpeg" alt="ricerca ordini"></a>
+                   <img src="../images/ricerca.jpg" alt="ricerca ordini"></a>
                </td>
             </tr>
         </table>
