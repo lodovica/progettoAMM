@@ -1,0 +1,291 @@
+    body {
+        background-color: #f4f6e2;
+        font: 13px/20px "Open Sans",Arial,sans-serif;
+
+    }
+    header {
+        background-image: url('../images/logo.jpg');
+        background-repeat: repeat;
+        background-color: #f1f1d3;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        height: 230px;
+        width: 900px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+    }
+
+    #header{       
+            background-repeat: no-repeat;
+            background-position: center left;
+            padding-left: 20px;
+            padding-right: 20px;        
+    }
+    
+    #page {
+        background-image: url('../images/pageBG.png');
+        background-repeat: repeat;
+        background-color: #f1f1d3;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom:25px;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+    }
+/*controllo menu superiore*/
+    #menu{
+        margin-top: 155px;
+        display: inline-block;
+        color: black;
+        list-style: none;
+        position: static;
+
+    }
+
+    #menu ul li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    #menu a:link, #menu a:visited{
+        color: black;
+    }
+    
+    #menuTop li.riga{
+        border-right: 1px solid #ad0000;
+    }
+
+    #content {
+        margin-top: 40px;
+        margin-left: 15%;
+        margin-right: 10%;
+        padding-bottom: 10px;
+        padding-left: 20%;
+        min-height: 500px;
+        position: static;
+        
+    }
+    
+    #sidebar1{
+    margin-top: 25px;
+    float: left;
+    width: 250px;    
+    font-size: 13px;
+    position: static;
+    }
+    
+    #footer{
+    background-color: #990000;
+    padding: 10px;
+    padding-bottom: 10px;
+    color: black;
+    display: block; 
+    margin: auto; 
+    margin-top: 10px;
+    text-align: center;
+    }
+    
+    
+    .validator{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+
+    #logout{
+        margin-left: 600px;
+        position: absolute; 
+        color: black;
+    }
+    
+    p.logout a:link, p.logout a:visited{
+        padding-left: 18px;
+        color: yellow;
+        
+    }
+    
+    p.logout{
+        background: url('../images/logout.png') no-repeat left center;
+    }
+    
+ /* gestione stile logout */
+    .logout p{
+        margin: 10px;
+        float: left;
+    }
+
+    .logout ul{
+        display: block;
+        float: right;
+        margin-right: 10px;
+    }
+
+    .logout ul li{
+        display: inline-block;
+        height: 25px;
+        overflow: hidden;
+
+    }
+
+    .logout ul li a:link{
+        color: transparent;
+    }
+
+/*stile deli vari form, label e finestre di input di seguito*/
+    label.full{
+        display: inline-block;
+        width: 70%;
+    }
+
+    label{
+        display: inline-block;
+        width: 30%;
+    }    
+    
+    
+    input[type=submit], button{
+    color: #FFFFFF;
+    background-color: #990000;
+    height: 2em;
+    font-weight: bold;
+    border-radius: 1em;
+    border: 1px solid #ad0000;
+    min-width: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    }
+    
+    input[type=submit]:hover, button:hover{
+	background:linear-gradient(to top, #ad0000 5%, #990000 100%);
+        background-color:#ad0000;
+    }
+    
+    
+    .input-form{
+        line-height: 3em;
+
+    }
+
+
+    .input-form input[type=text], .input-form input[type=password]{
+        display: inline-block;
+        width:59%;
+    }
+
+    .input-form select{
+        display: inline-block;
+        width:59%;
+        border: 1px solid #1c345a;
+        background-color: #ffffff;
+    }
+
+    .input-form input[type=submit], .input-form button{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+/*stile dei bottoni*/
+    .btn-group input[type=submit], .btn-group button{
+        display: inline-block;
+    }
+
+    .btn-group{
+        text-align: center;
+    }
+
+/* stile delle tabelle */
+    table {
+        border: 1px solid #1c345a;
+        border-collapse: collapse;
+        margin-top:10px;
+        line-height: 1.2em;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 10px;
+
+    }
+
+
+    th, td {
+        border: 1px solid #1c345a;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    th{
+        background-color: #f5f614;
+        color: black;
+        font-weight: bold;
+    }
+    td.normal {
+        height: 50px;
+    }
+
+    .col-small{
+        width: 10%;
+        height: 50px;
+    }
+
+    .col-large{
+        width: 15%;
+        height: 50px;
+    }
+
+ /* stile delle tabelle per il pannello di controllo*/
+    .content{
+        border: 0px;
+        width: 110%;
+        margin-right: 15%;
+        table-layout: fixed;
+        margin-top: 40px;
+    }
+
+    .noRighe{
+        border: 0px;
+        padding-bottom: 40px;
+    }
+
+/*stile dei messaggi d'errore*/
+    .error li {
+        list-style: none;
+    }
+
+    .error{
+        width: 90%;
+        background-color: #fddb50;
+        border: 3px solid #ecbf09;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .error div{
+        margin: 0px;
+        background: url('../images/no.png') no-repeat left top;
+        min-height: 32px;
+
+    }
+/* stile per i messaggi di conferma */
+
+    .confirm{
+        width: 90%;
+        background-color: #0fea81;
+        border: 3px solid #36956e;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .confirm div{
+        margin: 0px;
+        background: url('../images/ok.png') no-repeat left top;
+        min-height: 32px;
+    }
